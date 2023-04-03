@@ -100,7 +100,7 @@
       "commands": ["undo"]
     },
     {
-      "before": ["<U>"],
+      "before": ["U"],
       "commands": ["redo"]
     },
     {
@@ -118,6 +118,20 @@
     {
       "before": ["<leader>", "l", "f"],
       "commands": ["editor.action.formatDocument"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -142,6 +156,16 @@
     {
       "before": ["<leader>", "/"],
       "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["p"],
+      "after": ["\"", "_", "d", "P"]
     }
   ],
   "[css]": {
