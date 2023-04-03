@@ -21,5 +21,34 @@
     "key": "o",
     "command": "explorer.openAndPassFocus",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover"
+  },
+  {
+    "key": "shift+w",
+    "command": "list.collapseAll",
+    "when": "listFocus && !inputFocus"
   }
 ]

@@ -91,10 +91,10 @@
       "before": ["g", "r"],
       "commands": ["editor.action.goToReferences"]
     },
-    {
-      "before": ["K"],
-      "commands": ["editor.action.showHover"]
-    },
+    // {
+    //   "before": ["K"],
+    //   "commands": ["editor.action.showHover"]
+    // },
     {
       "before": ["u"],
       "commands": ["undo"]
@@ -113,11 +113,15 @@
     },
     {
       "before": ["<leader>", "l", "a"],
-      "commands": ["editor.action.quickFix"]
+      "commands": ["keyboard-quickfix.openQuickFix"]
     },
     {
       "before": ["<leader>", "l", "f"],
       "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["git.revertSelectedRanges"]
     }
 
     // Not working
