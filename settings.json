@@ -119,6 +119,18 @@
       "before": ["<leader>", "l", "f"],
       "commands": ["editor.action.formatDocument"]
     }
+
+    // Not working
+    // {
+    //   "before": ["<C-d>"],
+    //   "commands": ["editor.action.scrollDownHover"],
+    //   "when": "editorHoverFocused"
+    // },
+    // {
+    //   "before": ["<C-u>"],
+    //   "commands": ["editor.action.scrollUpHover"],
+    //   "when": "editorHoverFocused"
+    // }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
