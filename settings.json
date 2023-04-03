@@ -1,0 +1,156 @@
+{
+  // Workbench
+  "window.commandCenter": false,
+  "workbench.sideBar.location": "right",
+  "workbench.list.smoothScrolling": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+
+  // Editor
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "breadcrumbs.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.cursorSurroundingLines": 8,
+  "editor.accessibilitySupport": "off",
+  "editor.tokenColorCustomizations": {
+    "comments": "#7f848e"
+  },
+
+  // Git
+  "git.autofetch": true,
+
+  // Code format
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+
+  // Dart language
+  "dart.lineLength": 120,
+
+  // C# language
+  "omnisharp.organizeImportsOnFormat": true,
+
+  // VIM
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": false,
+  "vim.surround": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-v>": false
+  },
+  "vim.insertModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<S-h>"],
+      "commands": ["workbench.action.previousEditor"],
+      "silient": true
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.nextEditor"],
+      "silient": true
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<U>"],
+      "commands": ["redo"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "l", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.formatDocument"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": ["workbench.action.previousEditor"],
+      "silient": true
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.nextEditor"],
+      "silient": true
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
