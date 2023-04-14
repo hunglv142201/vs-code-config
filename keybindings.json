@@ -1,13 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "alt+k",
-    "command": "editor.action.moveLinesUpAction"
-  },
-  {
-    "key": "alt+j",
-    "command": "editor.action.moveLinesDownAction"
-  },
+  // File explorer
   {
     "key": "ctrl+l",
     "command": "workbench.view.explorer"
@@ -22,6 +15,43 @@
     "command": "explorer.openAndPassFocus",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
   },
+  {
+    "key": "shift+w",
+    "command": "list.collapseAll",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+
+  // Editor
+  {
+    "key": "alt+k",
+    "command": "editor.action.moveLinesUpAction"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction"
+  },
+
+  // LSP
   {
     "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
@@ -42,13 +72,13 @@
     "command": "editor.action.scrollUpHover",
     "when": "editorHoverFocused"
   },
+  // {
+  //   "key": "shift+k",
+  //   "command": "editor.action.showHover"
+  // },
   {
-    "key": "shift+k",
-    "command": "editor.action.showHover"
-  },
-  {
-    "key": "shift+w",
-    "command": "list.collapseAll",
-    "when": "listFocus && !inputFocus"
+    "key": "q",
+    "command": "editor.action.escapeFocusHover",
+    "when": "editorHoverFocused"
   }
 ]
