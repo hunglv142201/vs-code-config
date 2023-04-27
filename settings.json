@@ -6,6 +6,7 @@
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "JetBrains Rider Dark Theme",
+  "security.workspace.trust.untrustedFiles": "open",
 
   // Editor
   "editor.formatOnSave": true,
@@ -22,15 +23,12 @@
   "editor.cursorSurroundingLines": 8,
   "editor.accessibilitySupport": "off",
   "editor.tokenColorCustomizations": {
-    "comments": "#7f848e",
-    "[JetBrains Rider Dark Theme]": {
-      "variables": "#bdbdbd"
-    }
+    "comments": "#7f848e"
   },
 
   // Git
   "git.autofetch": true,
-  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
 
   "github.copilot.enable": {
@@ -43,13 +41,19 @@
   },
 
   // Code format
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
@@ -58,12 +62,10 @@
   "[css]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
 
   // Dart language
   "dart.lineLength": 120,
+  "dart.flutterGutterIcons": false,
 
   // C# language
   "omnisharp.organizeImportsOnFormat": true,
@@ -82,6 +84,7 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": false,
   "vim.surround": true,
+  "vim.foldfix": true,
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
@@ -126,6 +129,18 @@
       "commands": ["editor.action.goToReferences"]
     },
     {
+      "before": ["g", "h"],
+      "after": ["0"]
+    },
+    {
+      "before": ["g", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["g", "e"],
+      "after": ["G"]
+    },
+    {
       "before": ["u"],
       "commands": ["undo"]
     },
@@ -142,11 +157,11 @@
       "commands": ["editor.action.commentLine"]
     },
     {
-      "before": ["<leader>", "l", "a"],
+      "before": ["<leader>", "a"],
       "commands": ["keyboard-quickfix.openQuickFix"]
     },
     {
-      "before": ["<leader>", "l", "r"],
+      "before": ["<leader>", "r"],
       "commands": ["editor.action.rename"],
       "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
@@ -161,6 +176,10 @@
     {
       "before": ["<leader>", "g", "b"],
       "commands": ["gitlens.toggleLineBlame"]
+    },
+    {
+      "before": ["<esc>"],
+      "commands": ["notifications.hideToasts"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -199,6 +218,18 @@
     {
       "before": ["<leader>", "/"],
       "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["g", "h"],
+      "after": ["0"]
+    },
+    {
+      "before": ["g", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["g", "e"],
+      "after": ["G"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [

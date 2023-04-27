@@ -23,12 +23,12 @@
   {
     "key": "a",
     "command": "explorer.newFile",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    "when": "filesExplorerFocus && foldersViewVisible && !inputFocus"
   },
   {
     "key": "shift+a",
     "command": "explorer.newFolder",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    "when": "filesExplorerFocus && foldersViewVisible && !inputFocus"
   },
   {
     "key": "r",
@@ -72,10 +72,6 @@
     "command": "editor.action.scrollUpHover",
     "when": "editorHoverFocused"
   },
-  // {
-  //   "key": "shift+k",
-  //   "command": "editor.action.showHover"
-  // },
   {
     "key": "q",
     "command": "editor.action.escapeFocusHover",
